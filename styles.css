@@ -1,0 +1,239 @@
+body {
+            
+    font-size: 25px;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+#top-weblogo {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#top-weblogo .item{
+    padding: 3em;
+}
+#top-weblogo button {
+    font-size: 1.2em;
+    padding: 10px 30px;
+    background-color: transparent;
+    color: hsl(322, 100%, 66%);
+    border: 2px solid hsl(322, 100%, 66%);
+    border-radius: 100px;
+}
+.community {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.community p {
+    width: 40%;
+}
+.community h1 {
+    font-size: 2.5em;
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+}
+.community button {
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    margin: 2.5em;
+    padding: 30px 120px;
+    background-color: hsl(322, 100%, 66%);
+    border: 2px solid hsl(322, 100%, 66%);
+    border-radius: 100px;
+}
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-container .item {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 50%;
+    max-width: 50%;
+    box-sizing: border-box;
+    padding: 150px;
+}
+
+.main-container #grown-description {
+    order : 1;
+}
+.main-container #grown-illustration {
+    order : 2;
+}
+.main-container #conversations-illustration {
+    order : 3;
+}
+.main-container #conversations-description {
+    order : 4;
+}
+.main-container #user-description {
+    order : 5;
+}
+.main-container #user-illustration {
+    order : 6;
+}
+
+.main-container  .records {
+    font-size: 40px;
+    line-height: 40px;
+    height: 600px;
+}
+.main-container .records h1 {
+    font-size: 3em;
+}
+.bottom-top {
+    margin: 0;
+    padding: 0;
+}
+.bottom-top img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.bottom {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 600;
+    color: white;
+    background-color: hsl(192, 100%, 9%);
+}
+.bottom .item {
+    font-size: 0.8em;
+    flex: 1;
+    box-sizing: border-box;
+}
+.bottom .bottom-left {
+    width: 50%;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 120px;
+    padding-bottom: 200px;
+    order: 1;
+}
+.bottom .bottom-left div {
+    width: 60%;
+}
+.bottom .contact {
+    font-weight: 400;
+    display: flex;
+    line-height: 0px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.bottom .contact img {
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.bottom .bottom-right {
+    padding-top: 100px;
+    padding-right: 150px;
+    order: 2;
+}
+.bottom-right input {
+    font-size: 1em;
+    font-weight: bold;
+    width: 40%;
+    margin-top: 2em;
+    margin-right: 2em;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 10px;
+}
+.bottom-right button {
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    padding: 20px 40px;
+    margin-top: 2em;
+    background-color: hsl(322, 100%, 66%);
+    border: 2px solid hsl(322, 100%, 66%);
+    border-radius: 10px;
+}
+.bottom-right p {
+    width: 65%;
+}
+.icon-huddle {
+    display: flex;
+    align-items: center;
+}
+
+.icon-huddle  img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 10px;
+}
+
+.icon-huddle h1 {
+    font-size: 3em;
+    padding-left: 10px;
+    margin: 0;
+}
+
+
+@media (max-width: 775px) {
+    body {
+        font-size: 20px;
+    }
+    .community p {
+        width: 80%;
+    }
+    .main-container .item {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 80px;
+        text-align: center;
+    }
+    .main-container #grown-description {
+        order : 2;
+    }
+    .main-container #grown-illustration {
+        order : 1;
+    }
+    .main-container #conversations-illustration {
+        order : 3;
+    }
+    .main-container #conversations-description {
+        order : 4;
+    }
+    .main-container #user-description {
+        order : 6;
+    }
+    .main-container #user-illustration {
+        order : 5;
+    }
+    .bottom {
+        flex-wrap: wrap-reverse;
+    }
+    .bottom .item {
+        flex: 100%;
+        padding: 80px;
+        text-align: center;
+    }
+    .bottom .bottom-left {
+        order: 2;
+    }
+    .bottom .bottom-right {
+        order: 1;
+    }
+    .bottom .bottom-left div {
+        width: 100%;
+    }
+    .bottom-right input {
+        width: 80%;
+    }
+    .bottom-right p {
+        width: 100%;
+    }
+}
